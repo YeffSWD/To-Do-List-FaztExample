@@ -1,0 +1,1 @@
+# En esta sección del curso tratamos de poner en practica los conceptos que vimos en la primera parte del tutorial y creamos una ToDo list basica que usa localStorage para cargar algunas tareas
