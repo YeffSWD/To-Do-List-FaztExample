@@ -12,19 +12,15 @@ export function TaskContextProvider(props) {
   const [idValue, setidValue] = useState(data.length);
 
   function createTask(taskTitle, taskDescription) {
-    if (taskTitle.trim() && taskDescription.trim()) {
-      setTasks([
-        ...tasks,
-        {
-          title: taskTitle,
-          id: idValue,
-          description: taskDescription,
-        },
-      ]);
-      setidValue(idValue + 1);
-    } else {
-      alert('Por favor inserte un nuumbre y una descripcion a la tarea');
-    }
+    setTasks([
+      ...tasks,
+      {
+        title: taskTitle,
+        id: idValue,
+        description: taskDescription,
+      },
+    ]);
+    setidValue(idValue + 1);
   }
 
   function deleteTasks(taskId) {

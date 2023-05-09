@@ -8,9 +8,13 @@ function TaskForm() {
 
   const HandleSubmit = (e) => {
     e.preventDefault();
-    createTask(title, description);
-    setDescription("");
-    setTitle("");
+    if(title.trim() && description.trim()){
+      createTask(title, description);
+      setDescription("");
+      setTitle("");
+    } else {
+      alert('Por favor ingrese una tarea y descripcion')
+    }
   };
 
   return (
